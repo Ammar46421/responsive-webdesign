@@ -1,31 +1,27 @@
-/* *{
-    padding: 0;
-    margin: 0;
-} */
-
-#container{
+/* navbar  */
+#container {
     position: sticky;
     background-color: brown;
-   
-    
     padding: 10px 10px;
-    
+
 }
 
-.navbar{
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.navbar img{
-    width:100px;
+.navbar img {
+    width: 100px;
 }
+
 
 .navbar ul li {
     list-style: none;
     display: inline;
     
+
 }
 
 .navbar ul li a {
@@ -33,20 +29,119 @@
     color: aliceblue;
 }
 
+/* navbar ends */
 
-.col-1{
-    width: 500px;
+/* body */
+
+#body {
+    justify-content: space-between;
+    display: flex;
+}
+
+.col-1 {
+    width: 700px;
     display: block;
     clear: both;
     /* content: ""; */
 }
 
-.col-2{
+.col-2 {
     width: 400px;
-    float: right;
+
 }
 
+/* 
 [class*="col-"] {
     float: left;
     padding: 15px;
-  }
+} */
+
+/* login div */
+.col-2 {
+    width: 360px;
+    height: 330px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    border: solid;
+    border-radius: 3px
+}
+
+h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+form {
+    padding-left: 18px;
+    width: 300px;
+}
+
+form label {
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+
+}
+
+form input {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+}
+
+input[type=submit] {
+    width: 315px;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background-color: #19c1a2;
+    color: white;
+    font-size: 20px;
+}
+
+p {
+
+    font-size: 15px;
+    text-align: center;
+}
+
+.p2 {
+    text-align: center;
+    padding-top: -10px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+.p2 a {
+    color: #19c1a2;
+    text-decoration: none;
+}
+
+.hp {
+    color: #c1be19;
+    text-decoration: none;
+    font-size: 400%;
+}
+
+@media only screen and (max-width:455px){
+    #body{
+        flex-direction: column;
+    }
+    #container{
+        width: 671px;
+        
+        
+    }
+   .navbar{
+        flex-direction: column;
+        
+        
+   }
+   .navbar ul {
+    display: inline;
+   }
+}
